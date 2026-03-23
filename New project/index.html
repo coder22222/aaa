@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloxTrade | Blox Fruits Services</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a class="brand" href="#top">BloxTrade</a>
+      <div class="nav__links">
+        <a href="#services">Services</a>
+        <a href="#payments">Payments</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav__cta" href="#order">Order</a>
+      </div>
+    </nav>
+
+    <section class="hero__content" id="top">
+      <div class="hero__copy">
+        <p class="kicker">Blox Fruits Services</p>
+        <h1>Buy Blox Fruits services with crypto.</h1>
+        <p class="hero__text">
+          A simple storefront for level grinding, raids, fruit hunting, and account carry services.
+          Buyers can pick a package, choose ETH, SOL, or BTC, and send you a structured order request.
+        </p>
+        <div class="crypto-strip" aria-label="Accepted cryptocurrencies">
+          <div class="crypto-pill">
+            <span class="crypto-pill__icon crypto-pill__icon--eth">ETH</span>
+            <span>Ethereum</span>
+          </div>
+          <div class="crypto-pill">
+            <span class="crypto-pill__icon crypto-pill__icon--sol">SOL</span>
+            <span>Solana</span>
+          </div>
+          <div class="crypto-pill">
+            <span class="crypto-pill__icon crypto-pill__icon--btc">BTC</span>
+            <span>Bitcoin</span>
+          </div>
+        </div>
+        <div class="hero__actions">
+          <a class="button button--solid" href="#order">Start an Order</a>
+          <a class="button button--ghost" href="#services">View Services</a>
+        </div>
+      </div>
+
+      <aside class="hero__card">
+        <p class="hero__card-label">Quick View</p>
+        <div class="hero__card-grid">
+          <article>
+            <span>Starting at</span>
+            <strong>$10</strong>
+          </article>
+          <article>
+            <span>Accepted</span>
+            <strong>ETH / SOL / BTC</strong>
+          </article>
+          <article>
+            <span>Delivery</span>
+            <strong>Manual fulfillment</strong>
+          </article>
+          <article>
+            <span>Contact</span>
+            <strong>Discord or Telegram</strong>
+          </article>
+        </div>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section class="section section--light" id="services">
+      <div class="section__heading">
+        <p class="kicker">Service Menu</p>
+        <h2>Choose the kind of help you want to sell</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card service-card">
+          <p class="service-card__tag">Popular</p>
+          <h3>Level Boosting</h3>
+          <p>Fast grinding sessions for players who want to skip the slow climb.</p>
+          <ul class="feature-list">
+            <li>1 to 100 levels</li>
+            <li>Estimated 1 to 3 days</li>
+            <li>Starting from $10</li>
+          </ul>
+          <button class="button button--solid service-select" type="button" data-service="Level Boosting" data-price="10">Select</button>
+        </article>
+
+        <article class="card service-card">
+          <p class="service-card__tag">Team Play</p>
+          <h3>Raid Carries</h3>
+          <p>Host raid clears for shards, fragments, and awakening progress.</p>
+          <ul class="feature-list">
+            <li>Single or bundle raids</li>
+            <li>Great for repeat buyers</li>
+            <li>Starting from $15</li>
+          </ul>
+          <button class="button button--solid service-select" type="button" data-service="Raid Carries" data-price="15">Select</button>
+        </article>
+
+        <article class="card service-card">
+          <p class="service-card__tag">Premium</p>
+          <h3>Fruit Hunting</h3>
+          <p>Reserved time slots for targeted fruit farming and stock checks.</p>
+          <ul class="feature-list">
+            <li>Custom goals</li>
+            <li>Priority queue</li>
+            <li>Starting from $25</li>
+          </ul>
+          <button class="button button--solid service-select" type="button" data-service="Fruit Hunting" data-price="25">Select</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="payments">
+      <div class="section__heading">
+        <p class="kicker kicker--warm">Crypto Payments</p>
+        <h2>Show buyers exactly how to pay</h2>
+      </div>
+
+      <div class="payment-grid">
+        <article class="payment-card">
+          <h3>Ethereum</h3>
+          <p>Network: Ethereum Mainnet</p>
+          <code id="eth-address">0xYourEthWalletHere</code>
+          <button class="button button--ghost copy-button" type="button" data-copy-target="eth-address">Copy ETH Address</button>
+        </article>
+
+        <article class="payment-card">
+          <h3>Solana</h3>
+          <p>Network: Solana</p>
+          <code id="sol-address">YourSolWalletHere</code>
+          <button class="button button--ghost copy-button" type="button" data-copy-target="sol-address">Copy SOL Address</button>
+        </article>
+
+        <article class="payment-card">
+          <h3>Bitcoin</h3>
+          <p>Network: Bitcoin</p>
+          <code id="btc-address">YourBitcoinWalletHere</code>
+          <button class="button button--ghost copy-button" type="button" data-copy-target="btc-address">Copy BTC Address</button>
+        </article>
+      </div>
+
+      <div class="notice">
+        <strong>Before going live:</strong> replace the placeholder wallet addresses, add your real contact handle, and make sure the services you sell comply with Roblox and Blox Fruits rules.
+      </div>
+    </section>
+
+    <section class="section section--light">
+      <div class="split">
+        <article class="card">
+          <p class="kicker">Why Buyers Trust It</p>
+          <h2>Simple, clear, and low-friction</h2>
+          <ul class="feature-list">
+            <li>Service tiers with transparent starting prices</li>
+            <li>Clear payment methods for ETH, SOL, and BTC</li>
+            <li>Order summary buyers can send to you directly</li>
+            <li>Manual fulfillment flow with no backend setup required</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <p class="kicker">Recommended Flow</p>
+          <h2>How to use this site</h2>
+          <ol class="steps">
+            <li>Buyer selects a service and enters order details.</li>
+            <li>Buyer chooses ETH, SOL, or BTC and reviews the estimate.</li>
+            <li>Buyer sends payment and shares the transaction hash with you.</li>
+            <li>You confirm the order through Discord or Telegram and deliver manually.</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--light" id="order">
+      <div class="section__heading">
+        <p class="kicker">Order Builder</p>
+        <h2>Collect a complete order request</h2>
+      </div>
+
+      <div class="order-layout">
+        <form class="card order-form" id="order-form">
+          <label>
+            Service
+            <select id="service" name="service">
+              <option value="Level Boosting" data-price="10">Level Boosting</option>
+              <option value="Raid Carries" data-price="15">Raid Carries</option>
+              <option value="Fruit Hunting" data-price="25">Fruit Hunting</option>
+            </select>
+          </label>
+
+          <label>
+            Package Size
+            <select id="package" name="package">
+              <option value="Starter" data-multiplier="1">Starter</option>
+              <option value="Standard" data-multiplier="2">Standard</option>
+              <option value="Premium" data-multiplier="3">Premium</option>
+            </select>
+          </label>
+
+          <label>
+            Payment Coin
+            <select id="coin" name="coin">
+              <option value="ETH">ETH</option>
+              <option value="SOL">SOL</option>
+              <option value="BTC">BTC</option>
+            </select>
+          </label>
+
+          <label>
+            Contact Handle
+            <input id="contact" name="contact" type="text" placeholder="Discord tag or Telegram username">
+          </label>
+
+          <label>
+            Order Details
+            <textarea id="details" name="details" rows="5" placeholder="Example: Need 20 levels tonight, Sea 2, available after 8 PM CST"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="button button--solid" type="submit">Generate Order</button>
+            <button class="button button--ghost" id="copy-order" type="button">Copy Summary</button>
+          </div>
+        </form>
+
+        <aside class="card summary-card">
+          <p class="summary-card__label">Estimated Price</p>
+          <h3 id="estimate">$10</h3>
+          <p id="payment-note">Buyer selected ETH.</p>
+          <pre id="summary-output">Choose a package and generate an order summary.</pre>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--light" id="faq">
+      <div class="section__heading">
+        <p class="kicker">FAQ</p>
+        <h2>Set expectations upfront</h2>
+      </div>
+
+      <div class="faq-list">
+        <article class="card">
+          <h3>How fast is delivery?</h3>
+          <p>Set your own delivery window. The sample copy assumes manual fulfillment within a few hours to a couple of days depending on the package.</p>
+        </article>
+
+        <article class="card">
+          <h3>How do buyers prove payment?</h3>
+          <p>Ask for the wallet transaction hash plus their contact handle before you begin the order.</p>
+        </article>
+
+        <article class="card">
+          <h3>Can I add more services later?</h3>
+          <p>Yes. The site is plain HTML, CSS, and JavaScript, so adding more cards or pricing options is straightforward.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>BloxTrade storefront template. Replace placeholder addresses and contact details before publishing.</p>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
